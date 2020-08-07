@@ -1,0 +1,32 @@
+---
+title: "Introduction to flashCard"
+author: "Jiena Gu McLellan"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to flashCard}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This is package is to create a flash card for Shiny application with desired data.frame. 
+
+## Introduction
+
+Simply create a data frame with `front` column and `back` column. Then put this data frame into `flashCard()` function, we will get a nice flash card. 
+
+```{r ex1}
+library(flashCard)
+df1 <- data.frame(
+  front = c("Title front","contentfront", "content second line"),
+  back =c("Title back","content back", "second line")
+)
+flashCard(df1, elementId = "card", front_text_color = "white")
+```

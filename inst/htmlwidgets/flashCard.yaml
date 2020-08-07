@@ -1,0 +1,6 @@
+dependencies:
+  - name: flashCard
+    version: 0.1.0
+    src: htmlwidgets/lib
+    style:
+      - style.css

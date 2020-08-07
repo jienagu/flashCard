@@ -1,0 +1,36 @@
+.flash-card {
+  background-color: transparent;
+  width: 300px;
+  height: 135px;
+  perspective: 1000px;
+}
+
+.flash-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flash-card:hover .flash-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flash-card-front, .flash-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flash-card-front {
+  color: white;
+}
+
+.flash-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}

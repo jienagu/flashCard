@@ -1,0 +1,22 @@
+Package: flashCard
+Title: Create a Flash Card
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Jiena",
+           family = "McLellan",
+           role = c("aut", "cre"),
+           email = "jienagu90@gmail.com",
+           comment = c(ORCID = "0000-0002-5578-088X")),
+    person(given = "Michael",
+           family = "Condouris",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-8862-4250")))
+Description: Create a flip over style Flash Card with desired data frame for Shiny application.
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Imports:
+    htmlwidgets, jsonlite
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
