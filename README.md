@@ -7,7 +7,6 @@
 
 <!-- badges: end -->
 
-The goal of flashCard is to …
 
 ## Installation
 
