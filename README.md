@@ -32,4 +32,4 @@ df1 <- data.frame(
 flashCard(df1, elementId = "card", front_text_color = "white")
 ```
 
-<img src="man/figures/README-ex1-1.png" width="100%" />
+![demo_gif](flashCard.gif)
