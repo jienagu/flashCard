@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# flashCard <img src="flashCard_logo.png"  width="180px" align="right"/>
+# flashCard <img src="flashCard_hex.png"  width="180px" align="right"/>
 
 <!-- badges: start -->
 
