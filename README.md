@@ -11,7 +11,7 @@
 ## Installation
 
 ``` r
-devtools::install_github("jienagu/flashCard")
+install.packages("flashCard")
 ```
 
 This is package is to create a flash card for Shiny application with
