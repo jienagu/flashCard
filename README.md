@@ -4,7 +4,7 @@
 # flashCard <img src="flashCard_hex.png"  width="180px" align="right"/>
 
 <!-- badges: start -->
-
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/flashCard)](https://cran.r-project.org/package=flashCard)
 <!-- badges: end -->
 
 
