@@ -10,8 +10,8 @@ flashCard(
   backColor = "#3443c9",
   front_text_color = "white",
   back_text_color = "white",
-  width = "300px",
-  height = "135px",
+  width = NULL,
+  height = NULL,
   elementId = NULL
 )
 }
@@ -38,9 +38,8 @@ Create a flash card  with desired data frame
 \examples{
 df1 <- data.frame(
 front = c("Title front","contentfront", "content second line"),
-back =c("Title back","content back", "second line")
+back = c("Title back","content back", "second line")
 )
 flashCard(df1, elementId = "card", front_text_color = "grey")
-
 
 }
