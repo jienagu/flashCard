@@ -26,17 +26,20 @@ flashCard <- function(data, frontColor = '#090e87', backColor = '#3443c9',front_
 
   # forward options using x
   x = list(
-    data = jsonlite::toJSON(
-      data, dataframe = "columns", null = "null", na = "null", auto_unbox = TRUE,
-      use_signif = TRUE, force = TRUE,
-      POSIXt = "ISO8601", UTC = TRUE, rownames = FALSE, keep_vec_names = TRUE,
-      json_verbatim = TRUE
-    ),
+    data = data,
     frontColor = frontColor,
     backColor = backColor,
     front_text_color = front_text_color,
     back_text_color = back_text_color
   )
+
+  attr(x, "TOJSON_ARGS") <- list(
+    dataframe = "columns", null = "null", na = "null", auto_unbox = TRUE,
+    use_signif = TRUE, force = TRUE,
+    POSIXt = "ISO8601", UTC = TRUE, rownames = FALSE, keep_vec_names = TRUE,
+    json_verbatim = TRUE
+  )
+
   # create widget
   htmlwidgets::createWidget(
     name = 'flashCard',
