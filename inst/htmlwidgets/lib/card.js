@@ -1,9 +1,7 @@
 function flashCard(el, x){
   var jsonData = x.data;
   
-  var flipwrapperdiv = document.getElementById(el.id);
-  
-  flipwrapperdiv.classList.add("flash-card");
+  el.classList.add("flash-card");
   let flipinnerdiv = document.createElement("div");
   flipinnerdiv.classList.add("flash-card-inner");
 
@@ -41,7 +39,7 @@ function flashCard(el, x){
     flipinnerdiv.appendChild(backdiv);
   }
   
-  flipwrapperdiv.appendChild(flipinnerdiv);
+  el.appendChild(flipinnerdiv);
 }
 
 window.flashCard = flashCard;
