@@ -21,7 +21,7 @@
 #'
 #'
 #' @export
-flashCard <- function(data,frontColor = '#090e87', backColor = '#3443c9',front_text_color = "white",
+flashCard <- function(data, frontColor = '#090e87', backColor = '#3443c9',front_text_color = "white",
                       back_text_color = "white", width = "300px", height = "135px", elementId = NULL) {
 
   # forward options using x
