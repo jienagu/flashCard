@@ -15,7 +15,7 @@
 #' @examples
 #' df1 <- data.frame(
 #' front = c("Title front","contentfront", "content second line"),
-#' back =c("Title back","content back", "second line")
+#' back = c("Title back","content back", "second line")
 #' )
 #' flashCard(df1, elementId = "card", front_text_color = "grey")
 #'
@@ -38,10 +38,6 @@ flashCard <- function(data, frontColor = '#090e87', backColor = '#3443c9',front_
     back_text_color = back_text_color
   )
   # create widget
-  create_widget(x, width, height, elementId)
-}
-
-create_widget <- function(x, width, height, elementId){
   htmlwidgets::createWidget(
     name = 'flashCard',
     x,
