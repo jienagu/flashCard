@@ -22,7 +22,7 @@
 #'
 #' @export
 flashCard <- function(data, frontColor = '#090e87', backColor = '#3443c9',front_text_color = "white",
-                      back_text_color = "white", width = "300px", height = "135px", elementId = NULL) {
+                      back_text_color = "white", width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(
@@ -38,13 +38,21 @@ flashCard <- function(data, frontColor = '#090e87', backColor = '#3443c9',front_
     back_text_color = back_text_color
   )
   # create widget
+  create_widget(x, width, height, elementId)
+}
+
+create_widget <- function(x, width, height, elementId){
   htmlwidgets::createWidget(
     name = 'flashCard',
     x,
     width = width,
     height = height,
     package = 'flashCard',
-    elementId = elementId
+    elementId = elementId,
+    sizingPolicy = htmlwidgets::sizingPolicy(
+      defaultWidth = "100%",
+      defaultHeight = 135
+    )
   )
 }
 
