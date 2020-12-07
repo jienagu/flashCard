@@ -7,6 +7,12 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/flashCard)](https://cran.r-project.org/package=flashCard)
 <!-- badges: end -->
 
+Here is a Shiny demo repo: https://github.com/jienagu/flashCard_Shiny_Demo
+
+Live Demo on shinyapp.io: https://appforiarteam.shinyapps.io/flashCard_demo/
+
+Live podcast tutorial on 32:38 : https://shinydevseries.com/post/episode-16-jmclellan/
+
 
 ## Installation
 
