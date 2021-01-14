@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/flashCard)](https://cran.r-project.org/package=flashCard)
+[![Download](https://cranlogs.r-pkg.org/badges/grand-total/flashCard)](https://cranlogs.r-pkg.org/badges/grand-total/flashCard)
 <!-- badges: end -->
 
 Here is a Shiny demo repo: https://github.com/jienagu/flashCard_Shiny_Demo
