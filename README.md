@@ -40,3 +40,10 @@ flashCard(df1, elementId = "card", front_text_color = "white")
 ```
 
 ![demo_gif](man/figures/flashCard.gif)
+
+## App examples
+
+
+* Ganapathy Palanimuthu's Flash Card App repo: https://github.com/ganapap1/FlashCard/tree/main.  YouTube Demo: https://www.youtube.com/watch?v=x59NfU0NsRw
+
+
