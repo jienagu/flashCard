@@ -18,15 +18,15 @@
 #' back = c("Title back","content back", "second line")
 #' )
 #' flashCard(df1, elementId = "card", front_text_color = "grey")
-#' 
+#'
 #' @export
 flashCard <- function(data, frontColor = '#090e87', backColor = '#3443c9',front_text_color = "white",
-                      back_text_color = "white", width = NULL, height = NULL, elementId = NULL) UseMethod("flashCard")
+                      text_align = "center", back_text_color = "white", width = NULL, height = NULL, elementId = NULL) UseMethod("flashCard")
 
 #' @export
 #' @method flashCard data.frame
 flashCard.data.frame <- function(data, frontColor = '#090e87', backColor = '#3443c9',front_text_color = "white",
-                      back_text_color = "white", width = NULL, height = NULL, elementId = NULL) {
+                                 text_align = "center", back_text_color = "white", width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(
@@ -34,7 +34,8 @@ flashCard.data.frame <- function(data, frontColor = '#090e87', backColor = '#344
     frontColor = frontColor,
     backColor = backColor,
     front_text_color = front_text_color,
-    back_text_color = back_text_color
+    back_text_color = back_text_color,
+    text_align = text_align
   )
 
   attr(x, "TOJSON_ARGS") <- list(

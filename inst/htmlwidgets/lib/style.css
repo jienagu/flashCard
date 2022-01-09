@@ -9,10 +9,23 @@
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.7s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+div p {
+  padding-left:10px;
+  padding-top:0;
+  padding-right:10px;
+  padding-bottom:0;
+}
+
+div h2 {
+  padding-left:10px;
+  padding-top:0;
+  padding-right:10px;
+  padding-bottom:0;
 }
 
 .flash-card:hover .flash-card-inner {

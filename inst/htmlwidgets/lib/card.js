@@ -1,9 +1,10 @@
 function flashCard(el, x){
   var jsonData = x.data;
-  
+
   el.classList.add("flash-card");
   let flipinnerdiv = document.createElement("div");
   flipinnerdiv.classList.add("flash-card-inner");
+   flipinnerdiv.style.textAlign = x.text_align;
 
   let frontdiv = document.createElement("div");
   frontdiv.classList.add("flash-card-front");
@@ -21,24 +22,24 @@ function flashCard(el, x){
   backdiv.appendChild(htagBack);
   backdiv.style.background = x.backColor;
   backdiv.style.color = x.back_text_color;
-  
+
   for (var i = 1; i < jsonData.front.length; i++) {
     let pFront = document.createElement("p");
     pFront.innerHTML = jsonData.front[i];
     frontdiv.appendChild(pFront);
-  
+
     flipinnerdiv.appendChild(frontdiv);
   }
-  
+
   for (var j = 1; j < jsonData.back.length; j++) {
-  
+
     let pBack = document.createElement("p");
     pBack.innerHTML = jsonData.back[j];
     backdiv.appendChild(pBack);
-  
+
     flipinnerdiv.appendChild(backdiv);
   }
-  
+
   el.appendChild(flipinnerdiv);
 }
 
