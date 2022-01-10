@@ -62,7 +62,7 @@ flashCard(df1, elementId = "card", front_text_color = "white", text_align = "lef
 
 ```
 
-<img src="https://user-images.githubusercontent.com/15113457/148708151-e2f29f7c-a565-4c92-8e0a-a09e855d50a3.png" width="200" />
+<img src="https://user-images.githubusercontent.com/15113457/148708151-e2f29f7c-a565-4c92-8e0a-a09e855d50a3.png" width="350" />
 
 
 ## App examples
